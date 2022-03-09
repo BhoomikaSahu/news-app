@@ -1,0 +1,32 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root{
+  height: 100%;
+}
+.grid_container{
+  display: grid;
+  grid-template-areas: 
+  'main';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
+  height: 100%;
+}
+.rows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.rows.center{
+  justify-content: center;
+}
